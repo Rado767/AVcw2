@@ -1,7 +1,7 @@
 function [ mu_, covar_ ] = rm_bg_prob_reference( data_set )
 %RM_BG_PROB_REGERENCE Summary of this function goes here
 %   Detailed explanation goes here
-d_size = 5; %length(data_set);
+d_size = 5;
 
 [x, y, ~] = size(data_set{1});
 %mu_ = cell(x,y);
