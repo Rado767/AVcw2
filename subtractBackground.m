@@ -11,8 +11,8 @@ rb = background(:,:,1);
 gb = background(:,:,2);
 bb = background(:,:,3);
 
-thresholdR = 5;
-thresholdG = 5;
+thresholdR = 50;
+thresholdG = 50;
 thresholdB = 35;
 
 %Do subtraction 

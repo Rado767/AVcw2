@@ -1,19 +1,22 @@
 function ans = runTheCode()
 images = getImages('juggle1\');
 background = imread('background.jpg');
-background(:,:,1) = background(:,:,1);
+background(:,:,1) = background(:,:,1)*0.8;
 background(:,:,2) = background(:,:,2);
+ans = uint8(getMeanBackground(images));
+figure(5)
+imshow(ans)
 I =filterImg(images{15});
 figure(1)
 imshow(I)
-B =  filterImg(background);
+B =  filterImg(ans);
 figure(2)
 imshow(B)
 figure(4)
 imshow(I-B)
 new = subtractBackground(I, B);
 figure(3)
-imshow(new(:,:,1));
+imshow(new(:,:,3));
 
 %figure(1)
 %imshow(normalizeRGB(images{1}));
