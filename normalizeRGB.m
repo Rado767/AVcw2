@@ -4,9 +4,9 @@ chromCoordImg = zeros(r,c,w);
 for i=1:r
     for j=1:c
         n = image(i,j,1) + image(i,j,2) + image(i,j,3);
-        chromCoordImg(i,j,1) = image(i,j,1)/n;
-        chromCoordImg(i,j,2) = image(i,j,2)/n;
-        chromCoordImg(i,j,3) = image(i,j,3)/n;
+        chromCoordImg(i,j,1) = (image(i,j,1)/n)*255;
+        chromCoordImg(i,j,2) = (image(i,j,2)/n)*255;
+        chromCoordImg(i,j,3) = (image(i,j,3)/n)*255;
     end
 end
 end
