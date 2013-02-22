@@ -11,9 +11,9 @@ rb = background(:,:,1);
 gb = background(:,:,2);
 bb = background(:,:,3);
 
-thresholdR = 5;
-thresholdG = 5;
-thresholdB = 35;
+thresholdR = 0.1;
+thresholdG = 0.1;
+thresholdB = 0.1;
 
 %Do subtraction 
 for i = 1: m
