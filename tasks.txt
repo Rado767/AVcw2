@@ -1,0 +1,6 @@
+0. Gaussian blur filter. 
+1. Subtract provided background image with eack image. 
+2. Find mean and variance of background pixels from 5-10 past img. 
+3. Normalize the pixels left. 
+4. Find balls with respect to a plane in RGB space.
+5. Find centroids of balls.
