@@ -3,7 +3,7 @@ function img = tryR(image)
 img = double(ones(m,n,w));
 for i = 1:m
     for j = 2:n
-        if(image(i,j,1) > 100 && image(i,j,2) < 100 && image(i,j,3) < 50)
+        if(image(i,j,1) > 60 && image(i,j,2) < 60 && image(i,j,3) < 50)
             img(i,j,1) = image(i,j,1);
             img(i,j,2) = image(i,j,2);
             img(i,j,3) = image(i,j,3);

@@ -15,4 +15,5 @@ end
 m;
 num;
 m = m./num;
+m = uint8(m);
 end
