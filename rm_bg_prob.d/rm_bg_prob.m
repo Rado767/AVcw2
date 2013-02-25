@@ -13,7 +13,7 @@ for x = 1:X
     end
 end
 
-res = rm_bg_prob_clean(res)./max(max(res));
+
 for x = 1:X
     for y = 1:Y
         img(x,y,1) = img(x,y,1)*res(x,y);
@@ -22,4 +22,6 @@ for x = 1:X
     end
 end
 
+img = img./max(max(max(img)));
+img = rm_bg_prob_clean(img).*255;
 end
